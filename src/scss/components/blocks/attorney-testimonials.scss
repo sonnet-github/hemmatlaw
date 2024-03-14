@@ -105,12 +105,14 @@
  
         .at-list {
             margin: 0 -20px;
+            pointer-events: none;
  
             .slick-list.draggable {
                 padding-right: 350px;
  
                 .slick-slide {
                     opacity: .30;
+                    pointer-events: all;
                 }
  
                 .slick-active {
@@ -283,6 +285,10 @@
 
             @media(max-width: $bp_tabletPortrait3){
                 height: auto;
+            }
+
+            .slick-prev {
+                pointer-events: all;
             }
         }
     }

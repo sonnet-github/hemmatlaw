@@ -185,6 +185,7 @@
         transform: translateY(-50%);
         width: 100%;
         pointer-events: none;
+        display: none;
 
         // @media(max-width: $bp_tabletPortrait3){
         //     transform: translate(0);

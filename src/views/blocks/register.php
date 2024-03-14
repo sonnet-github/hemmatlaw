@@ -60,7 +60,8 @@
             'job-description',
             'thankyou',
             'privacy-policy-terms',
-            'git-banner'
+            'git-banner',
+            'related-post'
         ];
 
         foreach($acf_blocks as $block){

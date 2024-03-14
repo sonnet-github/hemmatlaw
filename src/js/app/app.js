@@ -170,6 +170,15 @@ class WebApp {
       ],
     });
 
+    $('.related-post-mob .related-post-list').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+
     var activeListsARBot = jQuery('.single-team-art-list');
     var activeitem = jQuery('.single-team-art-list.active');
     var loadMore = jQuery('.more-btn a');

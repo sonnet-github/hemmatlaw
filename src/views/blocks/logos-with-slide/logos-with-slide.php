@@ -63,6 +63,14 @@
                                 </div>
                             <?php endif; ?>
                         <?php endif; ?>
+                        <div class="lgs-arrow">
+                            <div class="lgs-arrows lgs-arrow-prev">
+                                <img src="<?= \SDEV\Utils::getThemeResourcePath('assets/images/lgs-arrow.png') ?>" alt="View all" />
+                            </div>
+                            <div class="lgs-arrows lgs-arrow-next">
+                                <img src="<?= \SDEV\Utils::getThemeResourcePath('assets/images/lgs-arrow.png') ?>" alt="View all" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

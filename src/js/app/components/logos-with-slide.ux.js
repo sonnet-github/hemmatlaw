@@ -23,7 +23,7 @@ class Blogs {
       slidesToShow: 4,
       slidesToScroll: 1,
       cssEase: 'linear',
-      pauseOnHover: true,
+      pauseOnHover: false,
       autoplay: true,
       autoplaySpeed: 0,
       adaptiveHeight: true,
