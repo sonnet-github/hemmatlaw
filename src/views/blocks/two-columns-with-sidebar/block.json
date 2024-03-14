@@ -1,0 +1,24 @@
+{
+    "name": "acf/two-columns-with-sidebar",
+    "title": "Two Columns With Sidebar",
+    "description": "Two Columns With Sidebar. Has the option to cover full width or the container width.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "keywords": ["banner", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "two-columns-with-sidebar.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "edit",
+            "data" : {
+                "preview_image" : "two-columns-with-sidebar/preview.jpg"
+            }
+        }
+    }
+}

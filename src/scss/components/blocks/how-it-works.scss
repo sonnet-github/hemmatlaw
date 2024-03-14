@@ -1,0 +1,118 @@
+.block--custom-layout__hiw{
+    font-family: $mainFont;
+    padding: 20px 15px 0;
+
+    .hiw-inner {
+        max-width: 1202px;
+        margin: 0 auto;
+        background: #fff;
+        box-shadow: 0px 38px 49px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        padding: 40px 20px;
+
+        .hiw-title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 27px;
+            color: #07B88C;
+            margin-bottom: 10px;
+
+            @media(max-width: 1199px){
+                font-size: 22px;
+                line-height: 24px;
+            }
+
+            @media(max-width: $bp_mobileMedium){
+                max-width: 224px;
+                margin: 0 auto;
+                margin-bottom: 13px;
+            }
+        }
+
+        .hit-item-desc {
+            color: #363E45;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .hiw-list {
+            max-width: 1082px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media(max-width: $bp_tabletPortrait3){
+                display: block;
+                text-align: center;
+            }
+
+            .hiw-item:first-child {
+                width: 17.37%;
+
+                .hiw-title {
+                    font-size: 36px;
+                    line-height: 43.2px;
+                    letter-spacing: 0.72px;
+                    margin-bottom: 0;
+
+                    @media(max-width: 1199px){
+                        font-size: 29px;
+                        line-height: 38.2px;
+                    }
+
+                    @media(max-width: $bp_mobileMedium){
+                        font-size: 36px;
+                        line-height: 43.2px;
+                        max-width: 200px;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .hiw-item {
+                width: 29.20%;
+                padding-right: 62px;
+                position: relative;
+
+                @media(max-width: $bp_tabletPortrait3){
+                    width: 100% !important;
+                    padding-right: 0;
+                    margin-bottom: 48px;
+                }
+
+                &::after {
+                    content: '';
+                    width: 2px;
+                    height: 152px;
+                    position: absolute;
+                    right: 30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: #F0F1F4;
+
+                    @media(max-width: $bp_tabletPortrait3){
+                        right: auto;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: auto;
+                        bottom: -25px;
+                        width: 100%;
+                        height: 2px;
+                    }
+                }
+            }
+
+            .hiw-item:last-child {
+                width: 24.23%;
+                padding-right: 0;
+                margin-bottom: 0;
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}

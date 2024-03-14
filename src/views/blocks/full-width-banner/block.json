@@ -1,0 +1,24 @@
+{
+    "name": "acf/full-width-banner",
+    "title": "Image banner",
+    "description": "Image banner. Has the option to cover full width or the container width.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "keywords": ["banner", "image"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "full-width-banner.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "full-width-banner/preview.jpg"
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "acf/leadership",
+    "title": "Leadership",
+    "description": "Leadership. Has the option to cover full width or the container width.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "keywords": ["banner", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "leadership.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "edit",
+            "data" : {
+                "preview_image" : "leadership/preview.jpg"
+            }
+        }
+    }
+}

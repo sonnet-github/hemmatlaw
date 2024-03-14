@@ -1,0 +1,24 @@
+{
+    "name": "acf/current-openings",
+    "title": "Current Openings",
+    "description": "Current Openings. Has the option to cover full width or the container width.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "keywords": ["banner", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "current-openings.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "edit",
+            "data" : {
+                "preview_image" : "current-openings/preview.jpg"
+            }
+        }
+    }
+}

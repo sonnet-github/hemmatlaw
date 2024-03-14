@@ -1,0 +1,351 @@
+.block--custom-layout__ppt{
+    font-family: $mainFont;
+    padding: 157px 15px 0;
+    
+    .git-inner {
+        max-width: 1228px;
+        margin: 0 auto;
+
+        .git-title{
+            margin-bottom: 72px;
+            h2 {
+                font-size: 70px;
+                font-weight: 700;
+                letter-spacing: 1.4px;
+                background: var(--Linear,linear-gradient(115deg,#1b3266 4.51%,#00c896 38.5%));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                @media(max-width: $bp_tabletPortrait3){
+                    font-size: 50px;
+                }
+            }
+
+            @media(max-width: $bp_tabletPortrait3){
+                text-align: center;
+            }
+
+            @media(max-width: $bp_mobileMedium){
+                margin-bottom: 29px;
+            }
+        }
+
+        .git-list {
+            display: flex;
+
+            @media(max-width: $bp_tabletPortrait3){
+                display: block !important;
+            }
+        }
+
+        .git-col {
+            @media(max-width: $bp_tabletPortrait3){
+                width: 100% !important;
+            }
+        }
+
+        .git-col.git-left {
+            width: 59.60%;
+            
+
+            @media(max-width: 1199px){
+                padding-right: 20px;
+                margin-bottom: 30px;
+            }
+
+            @media(max-width: $bp_tabletPortrait3){
+                padding: 0;
+            }
+
+            .ppt-title {
+                h2 {
+                    font-weight: 700;
+                    letter-spacing: .32px;
+                    color: #07b88c;
+                    font-size: 40px;
+                    margin: 20px 0;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    color: #363e45;
+                    margin-bottom: 18px;
+                }
+
+                h3 {
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 43.2px;
+                    letter-spacing: .32px;
+                    color: #363e45;
+                    margin-bottom: 14px;
+                    margin-top: 65px;
+                }
+            }
+
+            .git-left-inner {
+                max-width: 602px;
+
+                @media(max-width: $bp_tabletPortrait3){
+                    margin: 0 auto;
+                }
+
+                h2.gform_title {
+                    display: none;
+                }
+
+                .git-left-side-item {
+                    background: #fff;
+                    box-shadow: 0px 38px 49px 0px rgba(0, 0, 0, 0.15);
+                    border-radius: 20px;
+                    padding: 30px;
+    
+                    h2.gform_title {
+                        display: none;
+                    }
+    
+                    .gform_fields {
+                        display: block;
+    
+                        .gfield  {
+                            display: block !important;
+                            margin-bottom: 20px;
+    
+                            input,
+                            textarea {
+                                background-color: #F0F1F4;
+                                color: #363E45;
+                                font-size: 16px;
+                                font-weight: 500;
+                                letter-spacing: 0.32px;
+                                background-color: #F0F1F4;
+                                height: 50px;
+                                border: none;
+                                padding: 0 25px;
+                                border-radius: none;
+
+                                @media(max-width: $bp_mobileMedium){
+                                    padding: 0 19px;
+                                }
+                            }
+    
+                            textarea {
+                                height: 100px !important;
+                                resize: none !important;
+                                padding: 20px;
+                                min-block-size: 0 !important;
+
+                                @media(max-width: $bp_mobileMedium){
+                                    padding: 19px;
+                                }
+                            }
+                        }
+                    }
+    
+                    .gform_footer.before {
+                        input {
+                            border-radius: 5px;
+                            width: 100%;
+                            height: 50px;
+                            background-color: #07b88c;
+                            padding: 0;
+                            font-weight: 500;
+                            font-size: 16px;
+                            letter-spacing: .32px;
+                            text-align: left;
+                            display: block;
+                            background-image: url(../assets/images/sched-icon.svg);
+                            background-repeat: no-repeat;
+                            background-position: top 13px right 230px;
+                            padding-left: 214px;
+    
+                            @media(max-width: $bp_mobileMedium){
+                                background-position: top 13px right 106px;
+                                padding-left: 76px;
+                             }
+                        }
+                    }
+    
+                    .footer-btn {
+                        margin-top: 20px;
+                        a {
+                            max-width: 100%;
+                            font-weight: 700;
+                            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    
+                            &::after {
+                                background-image: url(../assets/images/ic_round-phone.png);
+                            }
+                        }
+                    }
+    
+                    .tcb-para {
+                        text-align: center;
+                        font-weight: 400;
+                        line-height: 32.4px;
+                        letter-spacing: 0.48px;
+                        color: #363E45;
+                        font-size: 24px;
+                    }
+    
+                    .git-side-title {
+                        color: #07B88C;
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-bottom: 25px;
+                        line-height: 27px;
+                    }
+    
+                    .tcb-btn.global-btn.green-btn {
+                        margin-top: 39px;
+    
+                        a {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .git-col.git-right {
+            width: 40.4%;
+
+            @media(max-width: $bp_mobileMedium){
+                margin-top: 116px;
+            }
+
+            .git-right-inner {
+                background: #fff;
+                border-radius: 20px;
+                padding: 30px 40px;
+
+                @media(max-width: $bp_tabletPortrait3){
+                    margin: 0 auto;
+                    max-width: 602px;
+                }
+
+                .git-right-title {
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 27px;
+                    color: #07B88C;
+                }
+
+                .git-address {
+                    margin: 20px 0 35px;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        width: 100%;
+                        height: 2px;
+                        position: absolute;
+                        bottom: -12px;
+                        left: 0;
+                        background-color: #F0F1F4;
+                    }
+                }
+
+                .git-phone-item {
+                    margin: 20px 0;
+                }
+
+                .git-icon {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 50px;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background-color: #F0F1F4;
+                        right: -29px;
+                        width: 2px;
+                        height: 44px;
+
+                        @media(max-width: 1199px){
+                            right: -15px;
+                        }
+                    }
+
+                    @media(max-width: 1199px){
+                        margin-right: 22px;
+                    }
+                }
+
+                .git-text,
+                .git-text-phone {
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 16px;
+                    color: #363E45;
+                    font-weight: 700;
+                    line-height: 22px;
+                    max-width: 235px;
+
+                    @media(max-width: $bp_mobileMedium){
+                        max-width: 179px;
+                    }
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+
+                .git-text-phone {
+                    
+
+                    a {
+                        font-size: 16px;
+                        color: #363E45;
+                        font-weight: 700;
+                        line-height: 22px;
+                        text-decoration: none;
+                    }
+                }
+
+                .git-para {
+                    position: relative;
+                    margin-top: 50px !important;
+
+                    &::after {
+                        content: '';
+                        width: 100%;
+                        height: 2px;
+                        position: absolute;
+                        top: -27px;
+                        left: 0;
+                        background-color: #F0F1F4;
+                    }
+
+                    p{
+                        color: #363E45;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        margin-bottom: 11px;
+                    }
+                }
+            }
+        }
+
+        .git-map {
+            margin-top: 99px;
+            margin-bottom: 100px;
+        }
+
+        .git-map-inner {
+           
+            iframe {
+                width: 100%;
+                border-radius: 20px;
+            }
+        }
+    }
+}

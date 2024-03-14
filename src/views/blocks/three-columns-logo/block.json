@@ -1,0 +1,24 @@
+{
+    "name": "acf/three-columns-logo",
+    "title": "Three Columns Logo",
+    "description": "Three Columns Logo. Has the option to cover full width or the container width.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "keywords": ["banner", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "three-columns-logo.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "edit",
+            "data" : {
+                "preview_image" : "three-columns-logo/preview.jpg"
+            }
+        }
+    }
+}

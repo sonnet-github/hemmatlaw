@@ -1,0 +1,24 @@
+{
+    "name": "acf/two-columns-image-with-one-button",
+    "title": "Two Columns Image With One Button",
+    "description": "Two Columns Image With One Button. Has the option to cover full width or the container width.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "keywords": ["banner", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "two-columns-image-with-one-button.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "edit",
+            "data" : {
+                "preview_image" : "two-columns-image-with-one-button/preview.jpg"
+            }
+        }
+    }
+}

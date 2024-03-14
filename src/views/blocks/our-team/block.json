@@ -1,0 +1,24 @@
+{
+    "name": "acf/our-team",
+    "title": "Our Team",
+    "description": "Our Team. Has the option to cover full width or the container width.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "keywords": ["banner", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "our-team.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "edit",
+            "data" : {
+                "preview_image" : "our-team/preview.jpg"
+            }
+        }
+    }
+}

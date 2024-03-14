@@ -1,0 +1,447 @@
+.block--custom-layout__tctb{
+    padding: 35px 20px;
+
+    @media(max-width: $bp_mobileMedium){
+        margin-top: -116px;
+        position: relative;
+        z-index: 5;
+    }
+
+    .tctb-inner {
+        max-width: 1230px;
+        margin: 0 auto;
+
+        .tctb-wrap {
+            display: flex;
+            align-items: center;
+
+            @media(max-width: $bp_tabletPortrait3){
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+            }
+        }
+
+        .tctb-col {
+            @media(max-width: $bp_tabletPortrait3){
+                width: 100% !important;
+                padding: 0 !important;
+            }
+        }
+
+        .tctb-col.tctb-left {
+            width: 58.37%;
+
+            .tctb-left-inner {
+                @media(max-width: $bp_tabletPortrait3){
+                    max-width: 566px;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+
+            .tctb-title {
+                h2 {
+                    font-size: 36px;
+                    letter-spacing: 0.32px;
+                    font-weight: 700;
+                    color: #363E45;
+
+                    @media(max-width: 1199px){
+                        font-size: 29px;
+                        line-height: 20px;
+                    }
+
+                    @media(max-width: $bp_mobileLandscape){
+                        font-size: 29px;
+                        line-height: 33px;
+                    }
+
+                    @media(max-width: $bp_mobileMedium){
+                        font-size: 36px;
+                        line-height: 48.6px;
+                    }
+                }
+            }
+
+            .tctb-desc {
+                margin: 18px 0 33px;
+
+                p {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 27px;
+                    letter-spacing: 0.32px;
+                    color: #363E45;
+                }
+            }
+
+            .tctb-buttons {
+                max-width: 318px;
+                display: flex;
+
+                @media(max-width: $bp_tabletPortrait3){
+                    max-width: 100%;
+                    flex-wrap: wrap;
+                }
+
+                .tctb-btn-item {
+                    width: 50%;
+
+                    &:nth-child(2) {
+                        width: 58% !important;
+
+                        @media(max-width: $bp_tabletPortrait3){
+                            width: 100% !important;
+                        }
+                    }
+
+                    @media(max-width: $bp_tabletPortrait3){
+                        width: 100% !important;
+                        padding: 0 !important;
+                        margin-bottom: 10px;
+                    }
+
+                    a {
+                        max-width: 100%;
+                        font-size: 16px;
+                        height: 71.05px;
+                        line-height: 71.05px;
+
+                        @media(max-width: $bp_tabletPortrait3){
+                            text-align: left;
+                            width: 100%;
+                            padding: 0;
+                            padding-left: 20px;
+                            
+                        }
+                    }
+
+                    &:first-child {
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+
+        .tctb-col.tctb-right {
+            width: 41.63%;
+            position: relative;
+
+            @media(max-width: $bp_tabletPortrait3){
+                max-width: 432px;
+                margin-bottom: 70px;
+            }
+
+            @media(max-width: $bp_mobileMedium){
+                max-width: 336px;
+            }
+
+            .tctb-accent {
+                width: 510px;
+                height: 555px;
+                z-index: -1;
+                background-image: url(../assets/images/boy-with-laptop-accent.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+                bottom: 35px;
+
+                @media(max-width: 1199px){
+                    width: 421px;
+                    height: 426px;
+                    background-size: 100% 100%;
+                }
+
+                @media(max-width: $bp_mobileMedium){
+                    width: 334px;
+                    height: 341px;
+                }
+            }
+
+            .tctb-right-inner {
+                padding-left: 50px;
+
+                @media(max-width: $bp_tabletPortrait3){
+                    max-width: 432px;
+                    margin: 0 auto;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &#ds-tcb {
+        padding: 47px 20px;
+        background-color: #CCE7FF;
+        position: relative;
+        z-index: 5;
+
+        @media(max-width: $bp_mobileMedium){
+            background: none;
+            margin-top: 0;
+            padding: 140px 20px 47px;
+        }
+
+        .tctb-left-inner {
+            max-width: 620px;
+        }
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 250px;
+            bottom: 100%;
+            background-image: url(../assets/images/tcb-accent.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+
+            @media(max-width: $bp_mobileMedium){
+                background: none;
+            }
+        }
+
+        .tctb-col.tctb-right {
+
+            .tctb-right-inner {
+                @media(max-width: $bp_tabletPortrait3){
+                    padding-right: 0;
+                    padding-left: 0;
+                 }
+            }
+            
+            .tctb-accent {
+                background-image: url(../assets/images/stand-boy-accent.png);
+                height: 586px;
+                width: 665px;
+                top: 44px;
+                background-size: contain;
+
+                @media(max-width: 1199px){
+                    height: 479px;
+                 }
+
+                 @media(max-width: $bp_mobileMedium){
+                    height: 453px;
+                    width: 534px;
+                }
+            }
+        }
+    }
+
+    &#car-tcib {
+        margin-top: 40px;
+        .tctb-wrap {
+            flex-direction: row-reverse;
+
+            @media(max-width: $bp_tabletPortrait3){
+                flex-direction: column-reverse;
+            }
+
+            .tctb-col.tctb-left {
+                width: 61.46%;
+                padding-left: 166px;
+
+                .tctb-left-inner {
+                    max-width: 542px;
+
+                    .tctb-desc {
+                        p {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+
+                .tctb-buttons {
+                    max-width: 457px;
+
+                    @media(max-width: $bp_tabletPortrait3){
+                        margin: 0 auto;
+                    }
+                }
+                
+                .tctb-btn-item {
+                    width: 80%;
+
+                    &:nth-child(2) {
+                        a {
+                            color: #363e45;
+
+                            &::after {
+                                background-image: url(../assets/images/btn-arrow-dark.svg);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .tctb-col.tctb-right {
+                width: 38.24%;
+
+                .tctb-accent {
+                    display: none;
+                }
+
+                .tctb-right-inner {
+                    padding-left: 0;
+
+                    @media(max-width: $bp_mobileMedium){
+                        max-width: 127%;
+                        width: 129% !important;
+                        left: 50%;
+                        position: relative;
+                        transform: translateX(-50%);
+
+                    }
+
+                    .tctb-masking {
+                        width: 100%;
+                        height: 100%;
+                        -webkit-mask-image: url(../assets/images/car-tcib-accent.png) !important;
+                        mask-image: url(../assets/images/car-tcib-accent.png) !important;
+                        -webkit-mask-position: center center;
+                        mask-position: center center;
+                        -webkit-mask-repeat: no-repeat;
+                        mask-repeat: no-repeat;
+                        -webkit-mask-size: cover !important;
+                        mask-size: cover !important;
+                        position: relative;
+            
+                        img {
+                            width: 100%;
+                            max-width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &#probate-tcwb {
+        padding: 110px 20px;
+        @media(max-width: $bp_tabletPortrait3){
+            margin-top: -4px;
+         }
+        .tctb-col.tctb-left {
+            width: 55.37%;
+            padding-right: 60px;
+
+            .tctb-desc p {
+                font-size: 18px;
+                line-height: 27px;
+            }
+
+            .tctb-buttons {
+                display: block;
+
+                .tctb-btn-item {
+                    max-width: 329px;
+                    width: 100% !important;
+                    padding-right: 0 !important;
+                    margin-bottom: 20px;
+
+                    @media(max-width: $bp_tabletPortrait3){
+                        margin: 0 auto;
+                        margin-bottom: 20px;
+                     }
+
+                    &:nth-child(2) {
+                        a {
+                            color: #07B88C;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .tctb-col.tctb-right {
+            width: 57.63%;
+            position: relative;
+            padding-left: 17px;
+
+            @media(max-width: $bp_tabletPortrait3){
+                max-width: 100%;
+             }
+        }
+        .tctb-right-inner {
+            padding-left: 0;
+
+            @media(max-width: $bp_tabletPortrait3){
+                max-width: 100%;
+             }
+        }
+
+        .tctb-accent {
+            background-image: url(../assets/images/tci-boy-shape-accent.png);
+            position: absolute;
+            bottom: 6px;
+            width: 643px;
+            height: 582px;
+
+            @media(max-width: $bp_tabletPortrait3){
+                width: 100%;
+                height: 100%;
+             }
+        }
+
+        .tctb-masking {
+            width: 100%;
+            height: 592px;
+            -webkit-mask-image: url(../assets/images/prob-shape.png)!important;
+            mask-image: url(../assets/images/prob-shape.png)!important;
+            -webkit-mask-position: center center;
+            mask-position: center center;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            -webkit-mask-size: cover!important;
+            mask-size: cover!important;
+            position: relative;
+
+            @media(max-width: $bp_tabletPortrait3){
+                -webkit-mask-size: contain !important;
+                mask-size: contain !important;
+                height: 100%;
+             }
+
+            img {
+                width: 100%;
+                max-width: 100% !important;
+                height: 100%;
+            }
+        }
+    }
+    
+    // &#home-tcb {
+    //     position: relative;
+    //     background-color: #fff;
+
+    //     .tctb-inner {
+    //         position: relative;
+    //         z-index: 4;
+    //     }
+        
+    //     &::after {
+    //         content: "";
+    //         position: absolute;
+    //         top: -754px;
+    //         right: -135px;
+    //         background-image: url(../assets/images/tcb-accent-bg.png);
+    //         background-repeat: no-repeat;
+    //         background-position: 50%;
+    //         width: 769px;
+    //         height: calc(100% + 767px);
+    //         z-index: 1;
+
+    //         @media(max-width: $bp_tabletPortrait3){
+    //             height: 100%;
+    //             background-size: 100% 100%;
+    //         }
+    //     }
+    // }
+}

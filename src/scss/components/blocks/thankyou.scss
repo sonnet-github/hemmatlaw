@@ -1,0 +1,131 @@
+.block--custom-layout__thanks{
+font-family: $mainFont;
+    .thanks-inner {
+        padding: 201px 20px 40px;
+    }
+
+    .thanks-wrap {
+        display: flex;
+        max-width: 1135px;
+        margin: 0 auto;
+
+        @media(max-width: $bp_tabletPortrait3){
+            display: block;
+        }
+    }
+
+    .thanks-num {
+        color: #363E45;
+        font-size: 14px;
+        font-weight: 700;
+        /* line-height: 35px; */
+        margin-top: 32px;
+        display: block;
+    }
+
+    .thanks-left {
+        width: 52%;
+        padding-right: 40px;
+
+        @media(max-width: $bp_tabletPortrait3){
+            width: 100%;
+            padding: 0;
+            text-align: center;
+         }
+
+        .thanks-left-inner {
+            max-width: 456px;
+            @media(max-width: $bp_tabletPortrait3){
+                margin: 0 auto;
+             }
+            h2 {
+                color: #07B88C;
+                font-size: 50px;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+
+            span {
+                color: #363E45;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 35px;
+                margin-top: 30px;
+                display: block;
+            }
+        }
+
+        .thanks-btn {
+            margin-top: 189px;
+
+            @media(max-width: $bp_tabletPortrait3){
+                margin-top: 84px;
+            }
+        }
+
+        .thanks-btn a {
+            max-width: 221px;
+            height: 70px;
+            line-height: 69px;
+
+            @media(max-width: $bp_tabletPortrait3){
+                margin: 0 auto;
+                text-align: left;
+            }
+        }
+    }
+
+    .thanks-right {
+        width: 48%;
+        padding-left: 71px;
+
+        @media(max-width: 1199px){
+            padding-left: 31px;
+        }
+
+        @media(max-width: $bp_tabletPortrait3){
+            padding-left: 0;
+            width: 100%;
+            margin-top: 106px;
+            padding: 0 20px;
+        }
+
+        .masking {
+            -webkit-mask-size: contain;
+            mask-size: contain;
+            -webkit-mask-image: none;
+            mask-image: none;
+        }
+
+        .thanks-right-inner {
+            position: relative;
+            -webkit-filter: drop-shadow(1px 5px 6px rgba(0,0,0,.25));
+            -moz-filter: drop-shadow(1px 1px 4px rgba(0,0,0,.25));
+            -ms-filter: drop-shadow(1px 1px 4px rgba(0,0,0,.25));
+            -o-filter: drop-shadow(1px 1px 4px rgba(0,0,0,.25));
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background-image: url(../assets/images/about-accent.png);
+                background-repeat: no-repeat;
+                position: absolute;
+                top: -75px;
+                left: -21px;
+                background-position: center;
+                background-size: 100% 100%;
+
+                @media(max-width: $bp_mobileMedium){
+                    top: -29px;
+                    left: -8px;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

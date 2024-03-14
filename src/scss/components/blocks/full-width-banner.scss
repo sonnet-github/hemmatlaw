@@ -1,0 +1,34 @@
+.block--custom-layout__full-width-banner{
+    padding: 0 0;
+    background: $lightColor;
+    font-size: 0;
+    line-height: 0;
+
+    .container-block{
+        max-width: 1920px;
+        padding: 0 0;
+        margin: 0 auto;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .bg-image{
+        position: relative;
+
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &.block-layout-background,
+    &.block-layout-full{
+        .container-block{
+            max-width: 100%;
+        }
+    }
+}

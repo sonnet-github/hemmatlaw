@@ -1,0 +1,24 @@
+{
+    "name": "acf/privacy-policy-terms",
+    "title": "Privacy Policy Terms",
+    "description": "Privacy Policy Terms. Has the option to cover full width or the container width.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "keywords": ["banner", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "privacy-policy-terms.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "edit",
+            "data" : {
+                "preview_image" : "privacy-policy-terms/preview.jpg"
+            }
+        }
+    }
+}

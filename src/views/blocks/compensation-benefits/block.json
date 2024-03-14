@@ -1,0 +1,24 @@
+{
+    "name": "acf/compensation-benefits",
+    "title": "Compensation and benefits",
+    "description": "Compensation and benefits. Has the option to cover full width or the container width.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "keywords": ["banner", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "compensation-benefits.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "edit",
+            "data" : {
+                "preview_image" : "compensation-benefits/preview.jpg"
+            }
+        }
+    }
+}

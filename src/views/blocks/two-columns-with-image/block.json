@@ -1,0 +1,24 @@
+{
+    "name": "acf/two-columns-with-image",
+    "title": "Two Columns With Image",
+    "description": "Two Columns With Image. Has the option to cover full width or the container width.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "keywords": ["banner", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "two-columns-with-image.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "edit",
+            "data" : {
+                "preview_image" : "two-columns-with-image/preview.jpg"
+            }
+        }
+    }
+}

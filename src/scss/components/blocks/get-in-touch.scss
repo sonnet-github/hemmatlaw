@@ -1,0 +1,444 @@
+.block--custom-layout__git {
+  font-family: $mainFont;
+  padding: 0 0 0;
+  padding-top: 40px;
+
+  &#contact-form {
+    scroll-margin: 200px;
+  }
+
+  .git-inner {
+    margin: 0 auto;
+
+    .git-map-inner {
+      max-width: 1228px;
+      margin: 0 auto;
+
+      @media (max-width: 1365px) {
+        padding: 0 15px;
+      }
+    }
+
+    .git-loc-top {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1228px;
+      margin: 0 auto;
+      margin-bottom: 42px;
+
+      @media (max-width: 1365px) {
+        padding: 0 15px;
+      }
+
+      @media (max-width: $bp_tabletPortrait3) {
+        display: block;
+      }
+
+      .git-loc-item {
+        color: var(--363E45, #363e45);
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 27px;
+        margin-bottom: 43px;
+
+        @media (max-width: $bp_mobileMedium) {
+          font-size: 16px;
+          line-height: 23px;
+          display: flex;
+        }
+
+        svg {
+          position: relative;
+          top: 7px;
+          margin-right: 20px;
+        }
+      }
+
+      .git-loc-btn.global-btn.global-btn-green {
+        max-width: 189px;
+        width: 100%;
+
+        a {
+          width: 100%;
+          display: block;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .git-list {
+      max-width: 1228px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 4;
+
+      @media (max-width: 1365px) {
+        padding: 0 15px;
+      }
+    }
+
+    .git-title {
+      max-width: 1228px;
+      margin: 0 auto;
+      margin-bottom: 43px;
+      @media (max-width: 1365px) {
+        padding: 0 15px;
+      }
+      h2 {
+        color: #363e45;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 135%; /* 32.4px */
+        letter-spacing: 0.48px;
+      }
+
+      @media (max-width: $bp_tabletPortrait3) {
+        text-align: center;
+      }
+
+      @media (max-width: $bp_mobileMedium) {
+        margin-bottom: 29px;
+      }
+    }
+
+    .git-list {
+      display: flex;
+
+      @media (max-width: $bp_tabletPortrait3) {
+        display: block !important;
+      }
+    }
+
+    .git-col {
+      @media (max-width: $bp_tabletPortrait3) {
+        width: 100% !important;
+      }
+    }
+
+    .git-col.git-left {
+      width: 59.6%;
+
+      @media (max-width: 1199px) {
+        padding-right: 20px;
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: $bp_tabletPortrait3) {
+        padding: 0;
+      }
+
+      .git-left-inner {
+        max-width: 602px;
+
+        @media (max-width: $bp_tabletPortrait3) {
+          margin: 0 auto;
+        }
+
+        h2.gform_title {
+          display: none;
+        }
+
+        .git-left-side-item {
+          background: #fff;
+          box-shadow: 0px 38px 49px 0px rgba(0, 0, 0, 0.15);
+          border-radius: 20px;
+          padding: 30px;
+
+          h2.gform_title {
+            display: none;
+          }
+
+          .validation_message {
+            @media (max-width: 1199px) {
+              position: relative;
+              margin-bottom: -10px;
+            }
+          }
+
+          .gform_fields {
+            display: block;
+
+            .gfield {
+              display: block !important;
+              margin-bottom: 20px;
+
+              input,
+              textarea {
+                background-color: #f0f1f4;
+                color: #363e45;
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 0.32px;
+                background-color: #f0f1f4;
+                height: 50px;
+                border: none;
+                padding: 0 25px;
+                border-radius: none;
+
+                @media (max-width: $bp_mobileMedium) {
+                  padding: 0 19px;
+                }
+              }
+
+              textarea {
+                height: 100px !important;
+                resize: none !important;
+                padding: 20px;
+                min-block-size: 0 !important;
+
+                @media (max-width: $bp_mobileMedium) {
+                  padding: 19px;
+                }
+              }
+            }
+          }
+
+          .gform_footer.before {
+            input {
+              border-radius: 5px;
+              width: 100%;
+              height: 50px;
+              background-color: #07b88c;
+              padding: 0;
+              font-weight: 500;
+              font-size: 16px;
+              letter-spacing: 0.32px;
+              text-align: left;
+              display: block;
+              background-image: url(../assets/images/sched-icon.svg);
+              background-repeat: no-repeat;
+              background-position: top 13px right 230px;
+              padding-left: 214px;
+
+              @media (max-width: 1199px) {
+                background-position: top 13px right 230px;
+                padding-left: 184px;
+              }
+
+              @media (max-width: $bp_mobileMedium) {
+                background-position: top 13px right 106px;
+                padding-left: 76px;
+              }
+            }
+          }
+
+          .footer-btn {
+            margin-top: 20px;
+            a {
+              max-width: 100%;
+              font-weight: 700;
+              box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+              &::after {
+                background-image: url(../assets/images/ic_round-phone.png);
+              }
+            }
+          }
+
+          .tcb-para {
+            text-align: center;
+            font-weight: 400;
+            line-height: 32.4px;
+            letter-spacing: 0.48px;
+            color: #363e45;
+            font-size: 24px;
+          }
+
+          .git-side-title {
+            color: #07b88c;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            line-height: 27px;
+          }
+
+          .tcb-btn.global-btn.green-btn {
+            margin-top: 39px;
+
+            a {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .git-col.git-right {
+      width: 40.4%;
+
+      @media (max-width: $bp_mobileMedium) {
+        margin-top: 116px;
+      }
+
+      .git-right-inner {
+        background: #fff;
+        border-radius: 20px;
+        padding: 30px 40px;
+        box-shadow: 0 38px 49px 0 rgba(0, 0, 0, 0.15);
+
+        @media (max-width: $bp_tabletPortrait3) {
+          margin: 0 auto;
+          max-width: 602px;
+        }
+
+        .git-right-title {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 27px;
+          color: #07b88c;
+        }
+
+        .git-address {
+          margin: 20px 0 35px;
+          position: relative;
+
+          &::after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+            background-color: #f0f1f4;
+          }
+        }
+
+        .git-phone-item {
+          margin: 20px 0;
+        }
+
+        .git-text-sms-right {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 14px;
+          color: #07b88c;
+          font-family: Poppins;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+
+          a {
+            font-weight: 700;
+          }
+
+          @media (max-width: $bp_mobileMedium) {
+            display: block;
+            margin: 0;
+            font-size: 13px;
+            margin-top: 13px;
+          }
+        }
+
+        .git-icon {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 50px;
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #f0f1f4;
+            right: -29px;
+            width: 2px;
+            height: 44px;
+
+            @media (max-width: 1199px) {
+              right: -15px;
+            }
+          }
+
+          @media (max-width: 1199px) {
+            margin-right: 22px;
+          }
+        }
+
+        .git-text,
+        .git-text-phone {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 16px;
+          color: #363e45;
+          font-weight: 700;
+          line-height: 22px;
+          max-width: 235px;
+
+          @media (max-width: $bp_mobileMedium) {
+            max-width: 179px;
+          }
+
+          a {
+            text-decoration: none;
+          }
+        }
+
+        .git-text-phone {
+          a {
+            font-size: 16px;
+            color: #363e45;
+            font-weight: 700;
+            line-height: 22px;
+            text-decoration: none;
+          }
+        }
+
+        .git-para {
+          position: relative;
+          margin-top: 50px !important;
+
+          &::after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            top: -27px;
+            left: 0;
+            background-color: #f0f1f4;
+          }
+
+          p {
+            color: #363e45;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            margin-bottom: 11px;
+          }
+        }
+      }
+    }
+
+    .git-map {
+      padding-bottom: 100px;
+      background: #fff;
+      position: relative;
+      padding-top: 90px;
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 232px;
+        background-image: url(../assets/images/git-map-accent.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+      }
+    }
+
+    .git-map-inner {
+      iframe {
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+  }
+}

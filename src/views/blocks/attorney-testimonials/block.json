@@ -1,0 +1,24 @@
+{
+    "name": "acf/attorney-testimonials",
+    "title": "Attorney Testimonials",
+    "description": "Attorney Testimonials. Has the option to cover full width or the container width.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "keywords": ["banner", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "attorney-testimonials.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "edit",
+            "data" : {
+                "preview_image" : "attorney-testimonials/preview.jpg"
+            }
+        }
+    }
+}

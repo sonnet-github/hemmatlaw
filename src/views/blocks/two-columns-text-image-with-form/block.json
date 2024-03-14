@@ -1,0 +1,24 @@
+{
+    "name": "acf/two-columns-text-image-with-form",
+    "title": "Two Columns Text Image With Form",
+    "description": "Two Columns Text Image With Form. Has the option to cover full width or the container width.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "keywords": ["banner", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "two-columns-text-image-with-form.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "edit",
+            "data" : {
+                "preview_image" : "two-columns-text-image-with-form/preview.jpg"
+            }
+        }
+    }
+}

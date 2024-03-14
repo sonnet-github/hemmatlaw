@@ -1,0 +1,115 @@
+.block--custom-layout__apanel{
+    font-family: $mainFont;
+    padding: 40px 15px 0px;
+    background-color: #fff;
+    position: relative;
+    z-index: 4;
+
+    @media(max-width: $bp_mobileMedium){
+        background: transparent;
+    }
+
+    .apanel-btn {
+        a {
+            line-height: 50px;
+        }
+    }
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 208px;
+        position: absolute;
+        bottom: calc(100% - 1px);
+        left: 0;
+        background-image: url(../assets/images/top-accent-fin.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+
+        @media(max-width: $bp_mobileMedium){
+            top: 85%;
+            background-size: cover;
+            z-index: -1;
+        }
+    }
+
+    .apanel-inner {
+        max-width: 1199px;
+        margin: 0 auto;
+        background-color: #07B88C;
+        border-radius: 20px;
+        padding: 54px 15px;
+        box-shadow: 0px 6px 20px 13px #d1d1d1;
+        position: relative;
+        z-index: 2;
+
+        .apanel-col {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media(max-width: $bp_tabletPortrait3){
+                display: block;
+            }
+        }
+
+        .apanel-wrap {
+            max-width: 1121px;
+            margin: 0 auto;
+
+            
+
+            .apanel-left-inner {
+                max-width: 674px;
+                color: #fff;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 43.2px;
+                letter-spacing: 0.72px;
+                width: 100%;
+
+                @media(max-width: $bp_tabletPortrait3){
+                    max-width: 100%;
+                    text-align: center;
+                }
+            }
+
+            .apanel-right{
+                max-width: 208px;
+                width: 100%;
+
+                @media(max-width: $bp_tabletPortrait3){
+                    margin: 0 auto;
+                    text-align: left;
+                    margin-top: 40px;
+                }
+
+                @media(max-width: $bp_mobileMedium){
+                    max-width: 100%;
+                }
+                
+
+                a {
+                    color: #363e45;
+                    
+
+                    @media(max-width: $bp_mobileMedium){
+                        max-width: 298px;
+                        margin: 0 auto;
+                    }
+
+                    @media(max-width: $bp_tabletPortrait3){
+                        margin: 0 auto;
+                    }
+
+                    &::after {
+                        background-image: url(../assets/images/btn-arrow-dark.svg);
+                    }
+                }
+
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,230 @@
+.block--custom-layout__lws {
+  font-family: $mainFont;
+  background-color: #fff;
+  padding: 20px 20px 123px;
+  position: relative;
+  z-index: 5;
+  margin-top: 83px;
+
+  @media (max-width: $bp_tabletPortrait3) {
+    background-color: transparent;
+    margin-top: 0;
+    padding: 20px 20px 80px;
+  }
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 171px;
+    background-image: url(../assets/images/lws-accent.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    bottom: 100%;
+    position: absolute;
+    left: 0;
+
+    @media (max-width: $bp_tabletPortrait3) {
+      display: none;
+    }
+  }
+
+  .lgs-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f0f1f4;
+    border-radius: 20px;
+    padding: 74px 15px 55px;
+    box-shadow: 0 21px 27px 1px #c5c5c5;
+
+    .lgs-bot {
+      position: relative;
+    }
+
+    .lgs-wrap {
+      max-width: 1104px;
+      margin: 0 auto;
+
+      .lgs-list {
+        max-width: 1025px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        pointer-events: none;
+
+        @media (max-width: 1199px) {
+          max-width: 844px;
+        }
+
+        @media (max-width: $bp_tabletPortrait3) {
+          display: block;
+          max-width: 620px;
+          padding: 0 20px;
+        }
+      }
+
+      .slick-list.draggable {
+        @media (max-width: $bp_tabletPortrait3) {
+        }
+
+        @media (max-width: 500px) {
+          padding-bottom: 162px;
+        }
+      }
+
+      .slick-track {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: $bp_tabletPortrait3) {
+          display: flex;
+          align-items: center;
+        }
+
+        @media (max-width: 480px) {
+          display: flex;
+          align-items: center;
+        }
+
+        .slick-current {
+          .lgs-item::before {
+            display: none;
+          }
+        }
+
+        .slick-slide {
+          .lgs-item {
+            // @media(max-width: $bp_tabletPortrait3){
+            //     &::before {
+            //         display: none !important;
+            //     }
+            // }
+          }
+        }
+
+        .slick-active {
+          .lgs-item {
+            // @media(max-width: $bp_tabletPortrait3){
+            //     &::before {
+            //         display: block !important;
+            //     }
+            // }
+          }
+        }
+
+        .lgs-item {
+          position: relative;
+          padding: 0 30px;
+
+          // @media(max-width: $bp_tabletPortrait3){
+          //     margin-bottom: 40px;
+          //     height: 57px;
+          // }
+
+          &:before {
+            content: '';
+            width: 2px;
+            height: 90px;
+            position: absolute;
+            right: 254px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            background-color: #cde7ff;
+
+            @media (max-width: 1199px) {
+              right: 205px;
+            }
+
+            @media (max-width: $bp_tabletPortrait3) {
+              width: 100%;
+              height: 2px;
+              left: 50%;
+              transform: translateX(-50%);
+              bottom: 84px;
+              top: auto;
+              display: none !important;
+            }
+          }
+
+          &:first-child::after {
+            display: none;
+          }
+
+          img {
+            margin: 0 auto;
+            max-height: 120px;
+
+            @media (max-width: 1199px) {
+              max-width: 171px;
+              max-height: 100%;
+            }
+          }
+        }
+      }
+
+      .lgs-title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #363e45;
+        margin-bottom: 68px;
+        text-align: center;
+
+        @media (max-width: $bp_tabletPortrait3) {
+          font-size: 30px;
+          line-height: 35px;
+          text-align: center;
+        }
+      }
+
+      .lgs-arrow {
+        position: absolute;
+        top: 39%;
+        transform: translateY(-50%);
+        width: 100%;
+        pointer-events: none;
+
+        // @media(max-width: $bp_tabletPortrait3){
+        //     transform: translate(0);
+        //     top: auto;
+        //     bottom: 0;
+        // }
+
+        .lgs-arrows {
+          position: absolute;
+          pointer-events: all;
+        }
+
+        .lgs-arrow-prev {
+          left: 0;
+
+          // @media(max-width: $bp_tabletPortrait3){
+          //         display: none !important;
+          // }
+        }
+
+        .lgs-arrow-next {
+          right: 0;
+
+          img {
+            transform: rotate(180deg);
+
+            // @media(max-width: $bp_tabletPortrait3){
+            //     transform: rotate(270deg);
+            // }
+          }
+
+          // @media(max-width: $bp_tabletPortrait3){
+          //     bottom: -19px;
+          //     top: auto;
+          //     transform: translateX(-50%);
+          //     left: 50%;
+          //     right: auto;
+          // }
+        }
+      }
+    }
+  }
+}

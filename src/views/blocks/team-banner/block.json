@@ -1,0 +1,24 @@
+{
+    "name": "acf/team-banner",
+    "title": "Team Banner",
+    "description": "Team Banner. Has the option to cover full width or the container width.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "keywords": ["banner", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "team-banner.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "edit",
+            "data" : {
+                "preview_image" : "team-banner/preview.jpg"
+            }
+        }
+    }
+}

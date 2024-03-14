@@ -1,0 +1,419 @@
+.block--custom-layout__tcob{
+    padding: 35px 20px 145px;
+
+    @media(max-width: $bp_mobileMedium){
+        padding: 35px 20px 90px;
+    }
+    .tcob-inner {
+        max-width: 1230px;
+        margin: 0 auto;
+
+        .tcob-wrap {
+            display: flex;
+            align-items: center;
+
+            @media(max-width: $bp_tabletPortrait3){
+                flex-wrap: wrap;
+            }
+        }
+
+        .tcob-col {
+            @media(max-width: $bp_tabletPortrait3){
+                width: 100% !important;
+                padding: 0 !important;
+            }
+        }
+
+        .tcob-col.tcob-right {
+            width: 50.73%;
+            padding-left: 83px;
+
+            .tcob-right-inner {
+                @media(max-width: $bp_tabletPortrait3){
+                    max-width: 500px;
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-top: 50px;
+                }
+            }
+
+            .tcob-title {
+                h2 {
+                    font-size: 36px;
+                    letter-spacing: 0.32px;
+                    font-weight: 700;
+                    color: #363E45;
+
+                    @media(max-width: 1199px){
+                        font-size: 29px;
+                        line-height: 30px;
+                    }
+
+                    @media(max-width: $bp_mobileMedium){
+                        line-height: 45px;
+                    }
+                }
+
+                span {
+                    color: #07b88c;
+                }
+            }
+
+            .tcob-desc {
+                margin: 18px 0 33px;
+
+                p {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 27px;
+                    letter-spacing: 0.32px;
+                    color: #363E45;
+                }
+            }
+
+            .tcob-buttons {
+
+                .tcob-btn-item {
+                    max-width: 487px;
+                    width: 100%;
+
+                    a {
+                        max-width: 100%;
+                        font-size: 16px;
+
+                        @media(max-width: 1199px){
+                            font-size: 13px;
+                        }
+
+                        @media(max-width: $bp_tabletPortrait3){
+                            text-align: left;
+                        }
+
+                        @media(max-width: $bp_mobileMedium){
+                            padding-right: 55px;
+                            line-height: 17px;
+                            padding-top: 9px;
+                            font-size: 16px;
+                        }
+                    }
+
+                    &:first-child {
+                        padding-right: 20px;
+
+                        @media(max-width: $bp_tabletPortrait3){
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tcob-col.tcob-left {
+            width: 49.27%;
+            position: relative;
+
+            .tcob-left-inner {
+                @media(max-width: $bp_tabletPortrait3){
+                    max-width: 528px;
+                    margin: 0 auto;
+                }
+
+                @media(max-width: $bp_mobileMedium){
+                    max-width: 318px;
+                }
+            }
+
+            .tcob-pad {
+                padding-left: 20px;
+            }
+
+            .tcob-accent {
+                width: 591px;
+                height: 594px;
+                z-index: -1;
+                background-image: url(../assets/images/tcob-accent.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                bottom: 35px;
+
+                @media(max-width: 1199px){
+                    width: 509px;
+                    height: 502px;
+                    background-size: 100% 100%;
+                }
+
+                @media(max-width: 767px){
+                    width: 450px;
+                    height: 430px;
+                }
+
+                @media(max-width: $bp_mobileMedium){
+                    width: 314px;
+                    height: 288px;
+                }
+            }
+
+            .tcob-shadow {
+                -webkit-filter: drop-shadow(11px 10px 14px rgba(0,0,0,.45));
+                -moz-filter: drop-shadow(1px 1px 4px rgba(0,0,0,.75));
+                -ms-filter: drop-shadow(1px 1px 4px rgba(0,0,0,.75));
+                -o-filter: drop-shadow(1px 1px 4px rgba(0,0,0,.75));
+            }
+    
+            .masking {
+                width: 100%;
+                height: 100%;
+                -webkit-mask-image: url(../assets/images/tcob.png);
+                mask-image: url(../assets/images/tcob.png);
+                -webkit-mask-position: center center;
+                mask-position: center center;
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                -webkit-mask-size: contain;
+                mask-size: contain;
+                position: relative;
+    
+                img {
+                    width: 100%;
+                }
+            }
+
+            .tcob-right-inner {
+                padding-left: 50px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &#about-tcob {
+        padding: 87px 20px 145px;
+        @media(max-width: $bp_tabletPortrait3){
+            padding: 87px 20px 20px;
+        }
+        @media(max-width: $bp_mobileMedium){
+            padding: 60px 0 20px;
+        }
+        .tcob-col.tcob-right {
+            width: 63.33%;
+            margin-top: 32px;
+
+            @media(max-width: $bp_mobileMedium){
+                padding: 0 15px !important;
+                margin-top: 0;
+            }
+
+            .tcob-title {
+                h2 {
+                    @media(max-width: $bp_mobileMedium){
+                        font-size: 30px;
+                        line-height: 35px;
+                    }
+                }
+            }
+
+            .tcob-desc {
+                p {
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        .tcob-col.tcob-left {
+            width: 41.67%;
+
+            @media(max-width: $bp_mobileMedium){
+                width: 140% !important;
+            }
+
+            .tcob-left-inner {
+                @media(max-width: $bp_mobileMedium){
+                    max-width: 100%;
+                }
+            }
+
+            .tcob-pad {
+                @media(max-width: $bp_mobileMedium){
+                    padding-left: 0;
+                    width: calc(100% + 43px) !important;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            .tcob-accent {
+                background-image: url(../assets/images/tcob-about-accent.png);
+                width: 103%;
+                height: 100%;
+                background-size: 100% 100%;
+                top: 6px;
+
+                @media(max-width: $bp_tabletPortrait3){
+                    width: 74%;
+                }
+
+                @media(max-width: $bp_mobileMedium){
+                    width: 111%;
+                    top: -1px;
+                    left: -12px;
+                }
+            }
+
+            .masking {
+                -webkit-mask-image: url(../assets/images/about-tcob-shape.png);
+                mask-image: url(../assets/images/about-tcob-shape.png);
+    
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &#team-tcob,
+    &#car-tcob {
+        .tcob-wrap {
+            flex-direction: row-reverse;
+
+            .tcob-col.tcob-right {
+                padding-left: 0;
+            }
+        }
+    }
+
+    &#car-tcob {
+        padding: 35px 20px 70px;
+        @media(max-width: $bp_mobileMedium){
+            padding: 0 20px 70px;
+        }
+        .tcob-col.tcob-right {
+            width: 53.65%;
+
+            .tcob-right-inner {
+                max-width: 596px;
+
+                h2 {
+                    color: #07B88C;
+                }
+
+                p {
+                    margin-bottom: 26px;
+                }
+            }
+        }
+
+        .tcob-col.tcob-left {
+            width: 46.35%;
+        }
+    }
+
+    &#tcob-car-second {
+        position: relative;
+
+        &::after {
+            content: "";
+            content: "";
+            position: absolute;
+            top: auto;
+            left: 0;
+            background-image: url(../assets/images/tcob-car-accent.png);
+            background-repeat: no-repeat;
+            background-position: 50%;
+            width: 100%;
+            height: calc(100% + 216px);
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            background-size: 100% 100%;
+            z-index: -1;
+
+            @media(max-width: $bp_tabletPortrait3){
+                display: none;
+            }
+        }
+
+        .tcob-inner {
+            position: relative;
+            z-index: 4;
+        }
+
+        .tcob-col.tcob-left {
+            width: 43.91%;
+
+            .tcob-accent {
+                background-image: url(../assets/images/tci-boy-shape-accent.png) !important;
+                width: 563px;
+                height: 100%;
+                bottom: 4px;
+                background-size: 100% 100%;
+
+                @media(max-width: $bp_mobileMedium){
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .masking {
+                -webkit-mask-size: cover;
+                mask-size: cover;
+                height: 554px;
+            }
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .tcob-col.tcob-right {
+            width: 56.09%;
+
+            h2 {
+                color: #07B88C;
+            }
+
+            p {
+                margin-bottom: 26px;
+            }
+        }
+    }
+
+    // &#home-tco {
+    //     position: relative;
+    //     background: #fff;
+    //     overflow: hidden;
+
+    //     @media(max-width: $bp_tabletPortrait3){
+    //         background-color: #f0f1f5;
+    //     }
+
+    //     .tcob-inner {
+    //         position: relative;
+    //         z-index: 5;
+    //     }
+
+    //     &::after {
+    //         content: "";
+    //         position: absolute;
+    //         left: 0;
+    //         top: 50px;
+    //         background-image: url(../assets/images/tcob-accent-bg.png);
+    //         background-repeat: no-repeat;
+    //         background-position: 50%;
+    //         width: 100%;
+    //         z-index: 1;
+    //         background-size: 100% 100%;
+    //         height: 1372px;
+
+    //         @media(max-width: $bp_tabletPortrait3){
+    //             display: none;
+    //         }
+    //     }
+    // }
+}

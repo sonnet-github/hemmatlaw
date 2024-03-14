@@ -1,0 +1,24 @@
+{
+    "name": "acf/logos-with-slide",
+    "title": "Logos With Slide",
+    "description": "Logos With Slide. Has the option to cover full width or the container width.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "keywords": ["banner", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "logos-with-slide.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "edit",
+            "data" : {
+                "preview_image" : "logos-with-slide/preview.jpg"
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.block--custom-layout__co{
+    font-family: $mainFont;
+    background-color: #fff;
+    padding: 69px 20px 93px;
+
+    .co-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .co-list {
+            display: flex;
+            margin: 0 -5px;
+
+            @media(max-width: $bp_tabletPortrait3){
+                display: block;
+            }
+        }
+
+        .co-title {
+            text-align: center;
+            margin-bottom: 61px;
+
+            h2 {
+                font-size: 36px;
+                color: #363E45;
+                letter-spacing: 0.72px;
+                font-weight: 700;
+            }
+        }
+
+        .co-item {
+            width: 33.33%;
+            text-align: center;
+            padding: 0 5px;
+
+            @media(max-width: $bp_tabletPortrait3){
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .co-item-inner {
+                background-color: #CEE9E5;
+                border-radius: 12px;
+                padding: 30px;
+                height: 100%;
+
+                .co-desc {
+                    font-size: 20px;
+                    font-weight: 400;
+                    letter-spacing: 0.4px;
+                    color: #363E45;
+                    margin: 20px 0;
+                    line-height: 27px;
+                }
+
+                .co-icon {
+                    width: 70px;
+                    height: 70px;
+                    margin: 0 auto;
+                    background: #07B88C;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        filter: brightness(107.5);
+                    }
+                }
+
+                .co-read {
+                    a {
+                        border-radius: 5px;
+                        border: 2px solid #07B88C;
+                        color: #07B88C;
+                        height: 40px;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 40px;
+                        text-decoration: none;
+                        display: block;
+                        max-width: 130px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}

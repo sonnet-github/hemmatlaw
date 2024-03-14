@@ -1,0 +1,24 @@
+{
+    "name": "acf/git-banner",
+    "title": "Git Banner",
+    "description": "Git Banner. Has the option to cover full width or the container width.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "keywords": ["banner", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "git-banner.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "edit",
+            "data" : {
+                "preview_image" : "git-banner/preview.jpg"
+            }
+        }
+    }
+}

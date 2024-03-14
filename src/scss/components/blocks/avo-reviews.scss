@@ -1,0 +1,315 @@
+.block--custom-layout__ar{
+    padding: 100px 0px 100px;
+    position: relative;
+    // background-color: #fff;
+
+    .ReviewText__Control-sc-1lvcnpr-2 {
+        display: none !important;
+    }
+
+    .es-review-content-control {
+        display: none !important;
+    }
+
+    .ar-inner {
+        position: relative;
+        z-index: 6;
+    }
+
+    @media(max-width: 480px){
+        padding: 100px 20px 178px;
+    }
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: calc(100% - 186px);
+        position: absolute;
+        left: 0;
+        background-image: url(../assets/images/bot-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        z-index: 3;
+        top: -3px;
+
+        @media(max-width: 1365px){
+            top: -2px;
+        }
+
+        @media(max-width: $bp_tabletPortrait3){
+            top: -9px;
+         }
+
+        @media(max-width: 480px){
+            background-size: cover;
+            height: 100%;
+            
+        }
+
+    }
+
+    .ar-top {
+        max-width: 740px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        z-index: 4;
+        padding: 0 15px;
+
+        .ar-title {
+            margin: 30px 0 31px;
+            h2 {
+                font-weight: 700;
+                font-size: 36px;
+                letter-spacing: 0.32px;
+                color: #fff;
+            }
+        
+        }
+
+        .ar-desc {
+            p {
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 29.7px;
+                letter-spacing: 0.32px;
+                color: #fff;
+
+                @media(max-width: 480px){
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+
+    .ar-reviews-col {
+        @media(max-width: $bp_tabletPortrait3){
+            width: 100% !important;
+         }
+    }
+
+    .ar-reviews-bot {
+        margin-top: 47px;
+        display: flex;
+        align-items: flex-start;
+
+        @media(max-width: $bp_tabletPortrait3){
+            padding-left: 40px;
+         }
+
+        @media(max-width: $bp_mobileMedium){
+            padding-left: 0;
+        }
+
+        .Carousel__CarouselArrowControlContainer-sc-f2ox7y-8.hXrUSE {
+            display: none;
+        }
+
+        .eapps-widget-toolbar {
+            display: none !important;
+        }
+
+        .ar-reviews-col.ar-left {
+            width: 54.02%;
+            margin-top: 98px;
+
+            @media(max-width: $bp_tabletPortrait3){
+                display: none;
+             }
+
+            .masking {
+                width: 100%;
+                -webkit-mask-image: url(../assets/images/avvo-shape.png)!important;
+                mask-image: url(../assets/images/avvo-shape.png)!important;
+                -webkit-mask-position: center center;
+                mask-position: center center;
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                -webkit-mask-size: cover!important;
+                mask-size: contain !important;
+                position: relative;
+                mask-position: 0 -1px;
+                height: 700px;
+
+                @media(min-width: 1700px){
+                    height: 900px;
+                 }
+    
+                img {
+                    width: 100%;
+                    max-width: 100%!important;
+                    height: 100%;
+                    position: relative;
+                }
+            }
+        }
+
+        .ar-reviews-col.ar-right {
+            width: 45.98%;
+            font-family: $mainFont;
+
+            .ar-right-inner {
+                margin-left: -338px;
+
+                @media(min-width: 1700px){
+                    margin-left: -448px;
+                 }
+
+                @media(max-width: $bp_tabletPortrait3){
+                    margin-left: 0;
+                }
+            }
+
+            .es-main-content {
+                margin-right: -200px;
+
+                @media(max-width: $bp_mobileMedium){
+                    margin-right: 0;
+                }
+
+                .swiper-slide {
+                    opacity: .5;
+                }
+
+                .swiper-slide-active {
+                    opacity: 1;
+                }
+
+                .ArrowControl__ArrowControlIcon-sc-ps7sz3-1.pImoJ {
+                    width: 47px;
+                    height: 29px;
+
+                    svg {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .ArrowControl__ArrowControlContainer-sc-ps7sz3-0 {
+                    width: 80px !important;
+                    height: 80px !important;
+                    background-color: rgba(0,0,0,.8) !important;
+
+                    @media(max-width: $bp_mobileMedium){
+                        display:  none;
+                    }
+                }
+
+                .Carousel__CarouselArrowControlContainer-sc-f2ox7y-8.jCXFfl {
+                    right: 305px;
+                }
+            }
+
+            .es-review-background-container {
+                background: rgba(255,255,255,.8);
+                border-radius: 32px !important;
+                min-height: 640px;
+
+                @media(min-width: 1700px){
+                    min-height: 699px;
+                 }
+
+                a {
+                    text-decoration: none;
+                }
+
+                .es-review-author-name {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    letter-spacing: 0.8px;
+                    text-decoration: none;
+                }
+
+                .es-review-content-text-container {
+                    min-height: 100% !important;
+                    overflow: inherit;
+                }
+
+                .es-review-content-text {
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0.64px;
+                    color: #363E45;
+                    margin-top: 15px;
+
+                    @media(max-width: 1600px){
+                        font-size: 15px;
+                        line-height: 17px;
+                     }
+                }
+            }
+        }
+    }
+
+    .avo-awards {
+        padding: 0 20px;
+        margin-top: -130px;
+        position: relative;
+        z-index: 5;
+
+        @media(max-width: $bp_tabletPortrait3){
+            margin-top: 43px;
+        }
+    }
+
+    .avo-awards-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 10px 19px 11px rgba(0,0,0,.25);
+        font-family: $mainFont;
+
+        .avo-awards-wrap {
+            max-width: 1090px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+
+            @media(max-width: $bp_tabletPortrait3){
+                display: block;
+                text-align: center;
+            }
+
+            @media(max-width: $bp_tabletPortrait3){
+                padding-bottom: 10px;
+            }
+
+            .avo-check {
+                width: 12.75%;
+
+                @media(max-width: $bp_tabletPortrait3){
+                    width: 100%;
+                }
+            }
+
+            .avo-desc {
+                width: 71.65%;
+                color: #363E45;
+                font-size: 36px;
+                font-weight: 700;
+                letter-spacing: 0.72px;
+
+                @media(max-width: $bp_tabletPortrait3){
+                    width: 100%;
+                    margin: 20px 0;
+                    line-height: 42px;
+                }
+            }
+
+            .avo-award-img {
+                width: 15.6%;
+                margin-top: -39px;
+                margin-bottom: -39px;
+
+                @media(max-width: $bp_tabletPortrait3){
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

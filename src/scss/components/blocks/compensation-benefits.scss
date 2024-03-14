@@ -1,0 +1,99 @@
+.block--custom-layout__cab{
+    font-family: $mainFont;
+    padding: 80px 15px 90px;
+    background-color: #fff;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#183c69+0,0c807e+52,02be93+100 */
+    // background: linear-gradient(135deg,  rgba(24,60,105,1) 0%,rgba(12,128,126,1) 52%,rgba(2,190,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    position: relative;
+
+    &::after {
+        content: "";
+        content: "";
+        position: absolute;
+        top: auto;
+        left: 0;
+        background-image: url(../assets/images/cab-accent.png);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-size: 100% 100%;
+        z-index: 1;
+
+        @media(max-width: $bp_tabletPortrait3){
+            background-size: cover;
+        }
+    }
+
+    .cab-wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 5;
+        
+
+        .cab-title {
+            text-align: center;
+            margin-bottom: 61px;
+            h2 {
+                font-size: 36px;
+                font-weight: 700;
+                letter-spacing: 0.72px;
+                color: #363E45;
+            }
+        }
+
+        .cab-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -5px;
+        }
+
+        .cab-item {
+            width: 25%;
+            padding: 0 5px;
+            margin-bottom: 10px;
+
+            @media(max-width: $bp_tabletPortrait3){
+                width: 50%;
+            }
+
+            @media(max-width: $bp_mobileMedium){
+                width: 100%;
+            }
+            
+
+            .cab-item-inner {
+                background-color: #fff;
+                padding: 30px;
+                border-radius: 12px;
+                text-align: center;
+                height: 100%;
+                box-shadow: 0px 16px 25px 4px rgba(0,0,0,.15);
+
+                .cab-icon {
+                    width: 70px;
+                    height: 70px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #F0F1F4;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                }
+
+                .cab-desc {
+                    font-size: 20px;
+                    font-weight: 400;
+                    letter-spacing: 0.4px;
+                    color: #363E45;
+                    line-height: 27px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

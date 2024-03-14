@@ -1,0 +1,107 @@
+.block--custom-layout__gr{
+    padding: 27px 20px 60px;
+    
+    .gr-title {
+        h2 {
+            font-weight: 700;
+            font-size: 36px;
+            letter-spacing: 0.32px;
+            color: #0063AA;
+            margin-bottom: 0;
+
+            @media(max-width: $bp_mobileMedium){
+                font-size: 24px;
+            }
+        }
+
+        @media(max-width: $bp_mobileMedium){
+            width: 100%;
+            text-align: center;
+        }
+    }
+    
+    .gr-wrap {
+        max-width: 1202px;
+        margin: 0 auto;
+
+        .gr-top-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 39px;
+
+            @media(max-width: $bp_mobileMedium){
+                display: block;
+            }
+
+            .gr-btn {
+                max-width: 172px;
+                width: 100%;
+
+                @media(max-width: $bp_mobileMedium){
+                    max-width: 100%;
+                    margin-top: 40px;
+                }
+
+                a {
+                    @media(max-width: $bp_mobileMedium){
+                        max-width: 100%;
+                        margin-top: 40px;
+                    }
+    
+                }
+            }
+        }
+    }
+
+    .gr-rev {
+        .es-review-author-name {
+            font-size: 20px;
+            font-family: $mainFont;
+            font-weight: 500;
+        }
+
+        .es-review-background-container {
+            min-height: 197px;
+        }
+
+        .es-carousel-layout-item {
+            box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.16);
+        }
+
+        .swiper-watch-progress {
+            padding-bottom: 20px !important;
+        }
+
+        .es-review-content-text {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .es-main-container {
+
+            .es-review-content-text {
+                font-weight: 400;
+                font-size: 16px;
+                color: #363E45;
+                line-height: 20px;
+                font-family: 'poppins';
+            }
+
+            .es-review-content-text-container {
+                max-height: 40px;
+            }
+        }
+        
+    }
+
+    &#gr-ds {
+        position: relative;
+        z-index: 7;
+        .gr-title {
+            h2 {
+                color: #0063AA;
+            }
+        }
+    }
+}

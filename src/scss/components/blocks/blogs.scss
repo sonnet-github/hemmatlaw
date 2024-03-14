@@ -1,0 +1,178 @@
+.block--custom-layout__blogs{
+    font-family: $mainFont;
+    position: relative;
+    z-index: 6;
+    padding: 0 20px;
+
+    @media(max-width: $bp_mobileMedium){
+        padding: 0;
+        padding-left: 15px;
+        padding-top: 40px;
+    }
+
+    .blog-desk {
+        @media(max-width: $bp_mobileMedium){
+            display: none;
+        }
+    }
+
+    .blog-mob {
+        display: none;
+        @media(max-width: $bp_mobileMedium){
+            display: block;
+        }
+
+        .slick-list.draggable {
+            padding-right: 60px;
+
+            .slick-slide {
+                opacity: .4;
+            }
+
+            .slick-active {
+                opacity: 1;
+            }
+        }
+
+        ul.slick-dots {
+            position: absolute;
+            bottom: -34px !important;
+            padding-right: 15px;
+
+            @media (max-width: $bp_mobile) {
+                position: relative;
+                bottom: unset !important;
+                padding-right: 0;
+                width: auto !important;
+                padding-top: 50px;
+            }
+
+            li {
+                width: 113px;
+
+                @media (max-width: $bp_mobile) {
+                    width: 50px;
+                }
+
+                button {
+                    padding: 0;
+                    width: 100%;
+                    height: 5px;
+                    background-color: #fff;
+                }
+
+                &.slick-active button {
+                    background-color: #07B88C;
+                }
+            }
+        }
+    }
+
+    .blogs-inner {
+        max-width: 1202px;
+        margin: 0 auto;
+
+        .blogs-title {
+            margin-bottom: 47px;
+
+            h2 {
+                font-size: 30px;
+                font-weight: 700;
+                color: #363E45;
+            }
+        }
+
+        .blogs-list {
+            display: flex;
+            margin: 0 -5px;
+
+            @media(max-width: $bp_tabletPortrait3){
+                display: block;
+             }
+        }
+
+        .blogs-item {
+            width: 33.33%;
+            padding: 0 5px;
+
+            @media(max-width: $bp_tabletPortrait3){
+                margin: 0 auto;
+                width: 100%;
+                margin-bottom: 20px;
+             }
+
+             @media(max-width: $bp_mobileMedium){
+                padding: 0 10px;
+            }
+
+            .blogs-inner {
+                background-color: #fff;
+                border-radius: 12px;
+                padding: 18px;
+
+                .blogs-img {
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    canvas {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .blogs-desc {
+                    margin-top: 25px;
+                }
+
+                .blogs-title-item {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 27px;
+                    color: #363E45;
+                }
+
+                .blogs-para {
+                    margin: 28px 0 20px;
+                    p {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #363E45;
+                    }
+                }
+
+                .blogs-btn {
+                    a {
+                        max-width: 120px;
+                        height: 40px;
+                        display: flex;
+                        color: #07b88c;
+                        border-radius: 5px;
+                        border: 2px solid #07b88c;
+                        text-decoration: none;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all .5s ease-in-out;
+                        -webkit-transition: all .5s ease-in-out;
+                        -moz-transition: all .5s ease-in-out;
+                        -webkit-backface-visibility: hidden;
+
+                        &:hover {
+                            background-color: #07b88c;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

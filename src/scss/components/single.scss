@@ -1,0 +1,12 @@
+.page-blocks__single{
+    & > *:not(.block--custom-layout){
+        padding: 0 24px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    img, iframe, svg, video{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
