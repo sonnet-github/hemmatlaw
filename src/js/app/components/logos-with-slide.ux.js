@@ -16,7 +16,7 @@ class Blogs {
     slider.slick({
       dots: false,
       infinite: true,
-      speed: 2100,
+      speed: 5000,
       arrows: true,
       nextArrow: '.lgs-arrows.lgs-arrow-next',
       prevArrow: '.lgs-arrows.lgs-arrow-prev',
@@ -33,7 +33,7 @@ class Blogs {
           settings: {
             slidesToShow: 2,
             adaptiveHeight: true,
-            speed: 2100,
+            speed: 5000,
           },
         },
         {
@@ -41,7 +41,7 @@ class Blogs {
           settings: {
             slidesToShow: 1,
             adaptiveHeight: true,
-            speed: 2100,
+            speed: 5000,
           },
         },
       ],
