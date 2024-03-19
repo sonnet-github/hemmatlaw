@@ -36,6 +36,10 @@
         margin-bottom: 37px;
         max-width: 334px;
 
+        &:nth-child(5){
+          max-width: 437px;
+        }
+
         @media (max-width: $bp_tabletPortrait3) {
           text-align: center;
           width: 100%;
