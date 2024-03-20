@@ -98,7 +98,6 @@
     register_sidebar();
 
     // save
-
     add_filter('gform_incomplete_submission_pre_save','modify_incomplete_submission', 10, 3 );
     function modify_incomplete_submission( $submission_json, $resume_token, $form ) {
 
@@ -161,7 +160,9 @@
         } else {
             $email = $updated_json->submitted_values->{'5'};
         }
-		$token = STAGING_TOKEN; 
+
+
+    	$token = PROD_TOKEN; 
         $ch = curl_init( 'https://grow.clio.com/inbox_leads' );
         # Setup request to send json via POST.
         $payload = json_encode( 
@@ -188,10 +189,10 @@
     }
 
     // submit
-
     add_action( 'gform_after_submission_5', 'clio_send', 10, 2 );
     function clio_send( $entry, $form ) {
-		$token = STAGING_TOKEN; 
+
+		$token = PROD_TOKEN; 
     
         $ch = curl_init( 'https://grow.clio.com/inbox_leads' );
 
