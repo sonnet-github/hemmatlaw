@@ -7,10 +7,12 @@
      * @subpackage SDEV WP
      * @since SDEV WP Theme 2.0
      */
+	define('STAGING_TOKEN', 'accd2be9394b28d536e47d48bef0f0c1');
+	define('PROD_TOKEN', '9837a8f33d16723c9f620b42bbe05023');
     if(!isset($_SESSION)){
         session_start();
     }
-    define('DEV_ENV', 1);
+    define('DEV_ENV', 0);
 
     /* Show errors if DEV_ENV is set to 0 */
     if(DEV_ENV === 0){
@@ -96,6 +98,7 @@
     register_sidebar();
 
     // save
+
     add_filter('gform_incomplete_submission_pre_save','modify_incomplete_submission', 10, 3 );
     function modify_incomplete_submission( $submission_json, $resume_token, $form ) {
 
@@ -113,14 +116,11 @@
         if(!empty($updated_json->submitted_values->{'53'})){
             $message .= "<br/> Email Address: ".$updated_json->submitted_values->{'53'}."<br/> ------------------------------------------------------------------------";
         }
+        if(!empty($updated_json->submitted_values->{'50'})){
+            $message .= "<br/> Phone Number: ".$updated_json->submitted_values->{'50'}."<br/> ------------------------------------------------------------------------";
+        }
         if(!empty($updated_json->submitted_values->{'47'})){
-            $message .= "<br/> Phone Number: ".$updated_json->submitted_values->{'47'}."<br/> ------------------------------------------------------------------------";
-        }
-        if(!empty($updated_json->submitted_values->{'59'})){
             $message .= "<br/> Phone Number: ".$updated_json->submitted_values->{'59'}."<br/> ------------------------------------------------------------------------";
-        }
-        if(!empty($updated_json->submitted_values->{'17'})){
-            $message .= "<br/> Is there already a case filed or pending?: ".$updated_json->submitted_values->{'17'}."<br/> ------------------------------------------------------------------------";
         }
         if(!empty($updated_json->submitted_values->{'17'})){
             $message .= "<br/> Is there already a case filed or pending?: ".$updated_json->submitted_values->{'17'}."<br/> ------------------------------------------------------------------------";
@@ -152,12 +152,6 @@
         if(!empty($updated_json->submitted_values->{'42'}->{'42.1'})){
             $message .= "<br/> Address: ".$updated_json->submitted_values->{'42.1'}."<br/> ------------------------------------------------------------------------";
         }
-        if(!empty($updated_json->submitted_values->{'39'}->{'39.3'})){
-            $message .= "<br/> Legal First Name: ".$updated_json->submitted_values->{'39.3'}."<br/> ------------------------------------------------------------------------";
-        }
-        if(!empty($updated_json->submitted_values->{'39'}->{'39.6'})){
-            $message .= "<br/> Legal Last Name: ".$updated_json->submitted_values->{'39.6'}."<br/> ------------------------------------------------------------------------";
-        }
         $email = '';
         $phone = '';
  
@@ -167,9 +161,7 @@
         } else {
             $email = $updated_json->submitted_values->{'5'};
         }
-
-        $token = 'accd2be9394b28d536e47d48bef0f0c1';
-    
+		$token = STAGING_TOKEN; 
         $ch = curl_init( 'https://grow.clio.com/inbox_leads' );
         # Setup request to send json via POST.
         $payload = json_encode( 
@@ -196,10 +188,10 @@
     }
 
     // submit
+
     add_action( 'gform_after_submission_5', 'clio_send', 10, 2 );
     function clio_send( $entry, $form ) {
-    
-        $token = 'accd2be9394b28d536e47d48bef0f0c1';
+		$token = STAGING_TOKEN; 
     
         $ch = curl_init( 'https://grow.clio.com/inbox_leads' );
 
@@ -211,11 +203,11 @@
         if(!empty($entry['53'])){
             $message .= "<br/> Email Address: ".$entry['53']."<br/> ------------------------------------------------------------------------";
         }
-        if(!empty($entry['47'])){
-            $message .= "<br/> Phone Number: ".$entry['47']."<br/> ------------------------------------------------------------------------";
+        if(!empty($entry['50'])){
+            $message .= "<br/> Phone Number: ".$entry['50']."<br/> ------------------------------------------------------------------------";
         }
         if(!empty($entry['59'])){
-            $message .= "<br/> Phone Number: ".$entry['59']."<br/> ------------------------------------------------------------------------";
+            $message .= "<br/> Phone Number: ".$entry['47']."<br/> ------------------------------------------------------------------------";
         }
         if(!empty($entry['21'])){
             $message .= "<br/> Are there any minor children involved in the case?: ".$entry['21']."<br/> ------------------------------------------------------------------------";
@@ -238,17 +230,11 @@
         if(!empty($entry['37'])){
             $message .= "<br/> Original Date: ".date('m-d-Y', strtotime($entry['37']))."<br/> ------------------------------------------------------------------------";
         }
-        if(!empty($entry['41'])){            
+        if(!empty($entry['41'])){
             $message .= "<br/> Date of Birth: ".date('m-d-Y', strtotime($entry['41']))."<br/> ------------------------------------------------------------------------";
         }
         if(!empty($entry['42.1'])){
             $message .= "<br/> Address: ".$entry['42.1']."<br/> ------------------------------------------------------------------------";
-        }
-        if(!empty($entry['39.3'])){
-            $message .= "<br/> Legal First Name: ".$entry['39.3']."<br/> ------------------------------------------------------------------------";
-        }
-        if(!empty($entry['39.6'])){
-            $message .= "<br/> Legal Last Name: ".$entry['39.6']."<br/> ------------------------------------------------------------------------";
         }
         $email = '';
         $phone = '';
@@ -284,4 +270,6 @@
         $result = curl_exec($ch);
         curl_close($ch);
     }
+
+    
 ?>
