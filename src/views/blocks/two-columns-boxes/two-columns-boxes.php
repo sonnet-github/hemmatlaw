@@ -67,7 +67,7 @@
                                             </div>
                                             <div class="tcb-desc">
                                                 <div class="tcb-title">
-                                                    <?= $Title ?>
+                                                    <a href="<?= $boxLink['url'] ?>"><?= $Title ?></a>
                                                 </div>
                                                 <div class="tcb-desc">
                                                     <?= $boxDesc ?>
